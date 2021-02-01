@@ -14,5 +14,10 @@ export function GetQuoteById(id) {
     const url = `${BASE_URL}${id}`;
     return fetch(url, {headers,})
 	.then(data => data.json())
-    console.log(url)
+}
+
+export function GetAllQuotes() {
+    const url = `${BASE_URL}`;
+    return fetch(url, {headers,})
+	.then(data => data.json())
 }
