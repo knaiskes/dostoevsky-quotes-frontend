@@ -9,3 +9,10 @@ export function GetRandomQuote() {
     return fetch(url, {headers})
 	.then(data => data.json())
 }
+
+export function GetQuoteById(id) {
+    const url = `${BASE_URL}${id}`;
+    return fetch(url, {headers,})
+	.then(data => data.json())
+    console.log(url)
+}
