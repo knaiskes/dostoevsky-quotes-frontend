@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-import { GetAllQuotes } from './service/quote';
+import { GetQuotesByNovel } from './service/quote';
+import { useParams } from 'react-router-dom';
 
-export function AllQuotesList() {
+export function QuotesByNovel() {
     const [list, setList] = useState();
+    const { novel } = useParams();
     useEffect(() => {
 	let mounted = true;
-	GetAllQuotes()
-	    .then(items => {
+	GetQuotesByNovel(novel)
+	    .then(data => {
 		if(mounted) {
-		    setList(items)
+		    setList(data)
 		}
 	    })
 	return () => mounted = false;
-    }, [])
+    }, [novel])
 
     return (
 	<div className="App">

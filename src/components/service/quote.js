@@ -21,3 +21,9 @@ export function GetAllQuotes() {
     return fetch(url, {headers,})
 	.then(data => data.json())
 }
+
+export function GetQuotesByNovel(novel) {
+    const url = `${BASE_URL}novel/${novel}`;
+    return fetch(url, {headers,})
+	.then(data => data.json())
+}
