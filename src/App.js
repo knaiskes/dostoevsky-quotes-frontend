@@ -13,6 +13,7 @@ function App() {
 	    <BrowserRouter>
 	    <Switch>
 	    <Route path='/quotes/all' exact component={AllQuotesList} />
+	    <Route path='/quotes/random' exact component={RandomQuote} />
 	    <Route path='/quotes/:id' exact component={SingleQuote} />
 	    <Route path='/quotes/novel/:novel' exact component={QuotesByNovel} />
 	    </Switch>
