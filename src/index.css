@@ -77,10 +77,25 @@ body {
     color: #3F423A;
 }
 
-.RandomQuote h1 {
+.QuoteText {
     font-style: italic;
 }
 
-.RandomQuote h4 {
+.QuoteNovel {
     font-style: oblique;
+}
+
+.QuotesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.QuotesTable td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.QuotesTable tr:nth-child(even) {
+  background-color: #dddddd;
 }
