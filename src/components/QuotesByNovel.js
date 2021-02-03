@@ -18,20 +18,23 @@ export function QuotesByNovel() {
     }, [novel])
 
     return (
-	<div className="App">
-	    <table>
+	<div className="PageTitle">
+	    <div className="App">
+		<h2>Quotes by {novel} novel</h2>
+		<table className="QuotesTable">
 		<tbody>
 		    <tr>
-			<th>Text</th>
+			<th>Quote</th>
 			<th>Novel</th>
 		    </tr>
 		    {list && list.results.map(item => <tr key={item.text}>
-		   <td>{item.text}</td>
-		   <td> {item.novel}</td>
+		   <td className="QuoteText">{item.text}</td>
+		   <td className="QuoteNovel"> {item.novel}</td>
 		   </tr>
 		   )}
 		</tbody>
 	    </table>
+	    </div>
 	</div>
-    );
+);
 }
