@@ -64,3 +64,23 @@ body {
 .subnav:hover .subnav-content {
   display: block;
 }
+
+.PageTitle {
+    padding: 20px;
+    text-align: center;
+    color: #3F423A;
+}
+
+.RandomQuote {
+    padding: 50px;
+    text-align: center;
+    color: #3F423A;
+}
+
+.RandomQuote h1 {
+    font-style: italic;
+}
+
+.RandomQuote h4 {
+    font-style: oblique;
+}
