@@ -91,11 +91,12 @@ body {
 }
 
 .QuotesTable td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #EFEFEF;
   text-align: left;
   padding: 8px;
+  font-size: 20px;
 }
 
 .QuotesTable tr:nth-child(even) {
-  background-color: #dddddd;
+    background-color: #EFEFEF;
 }
