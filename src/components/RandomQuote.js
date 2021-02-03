@@ -19,8 +19,8 @@ export function RandomQuote() {
 	<div className="PageTitle">
 	    <h2>Random Quote</h2>
 	    <div className="RandomQuote">
-		<h1 className="quoteText">"{quote.text}"b</h1>
-		<h4>{quote.novel}</h4>
+		<h1 className="QuoteText">"{quote.text}"</h1>
+		<h4 className="QuoteNovel">{quote.novel}</h4>
 	    </div>
 	</div>
     );
