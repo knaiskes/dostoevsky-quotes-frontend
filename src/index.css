@@ -100,3 +100,18 @@ body {
 .QuotesTable tr:nth-child(even) {
     background-color: #EFEFEF;
 }
+
+.AboutPage { padding: 50px; }
+
+.AboutPage p {
+    padding: 3px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #3F423A;
+    font-size: 19px;
+    text-indent: 75px;
+}
+
+.AboutPage a { color: #4E2CF1; }
+
+.AboutPage ul { list-style-type: none; }

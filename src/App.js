@@ -8,6 +8,7 @@ import { RandomQuote } from './components/RandomQuote';
 import { SingleQuote } from './components/SingleQuote';
 import { AllQuotesList } from './components/AllQuotesList';
 import { QuotesByNovel } from './components/QuotesByNovel';
+import { AboutPage } from './components/AboutPage';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
 	    <Navbar />
 	    <BrowserRouter>
 	    <Switch>
+	    <Route path='/' exact component={AboutPage} />
 	    <Route path='/quotes/all' exact component={AllQuotesList} />
 	    <Route path='/quotes/random' exact component={RandomQuote} />
 	    <Route path='/quotes/:id' exact component={SingleQuote} />
