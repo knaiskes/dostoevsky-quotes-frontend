@@ -16,19 +16,12 @@ export function RandomQuote() {
     }, [])
 
     return (
-	<div className="RandomQuote">
-	    <table>
-		<tbody>
-		    <tr>
-			<th>Text</th>
-			<th>Novel</th>
-		    </tr>
-		    <tr>
-			<td>{quote.novel}</td>
-			<td>{quote.text}</td>
-			</tr>
-		</tbody>
-	    </table>
+	<div className="PageTitle">
+	    <h2>Random Quote</h2>
+	    <div className="RandomQuote">
+		<h1 className="QuoteText">"{quote.text}"</h1>
+		<h4 className="QuoteNovel">{quote.novel}</h4>
+	    </div>
 	</div>
     );
 }

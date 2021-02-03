@@ -7,7 +7,96 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #138397;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #138397;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.PageTitle {
+    padding: 20px;
+    text-align: center;
+    color: #3F423A;
+}
+
+.RandomQuote {
+    padding: 50px;
+    text-align: center;
+    color: #3F423A;
+}
+
+.QuoteText {
+    font-style: italic;
+}
+
+.QuoteNovel {
+    font-style: oblique;
+}
+
+.QuotesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.QuotesTable td, th {
+  border: 1px solid #EFEFEF;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.QuotesTable tr:nth-child(even) {
+    background-color: #EFEFEF;
 }

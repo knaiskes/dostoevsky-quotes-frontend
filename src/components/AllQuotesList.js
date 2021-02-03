@@ -16,20 +16,23 @@ export function AllQuotesList() {
     }, [])
 
     return (
-	<div className="App">
-	    <table>
-		<tbody>
-		    <tr>
-			<th>Text</th>
-			<th>Novel</th>
-		    </tr>
-		    {list && list.results.map(item => <tr key={item.text}>
-		   <td>{item.text}</td>
-		   <td> {item.novel}</td>
-		   </tr>
-		   )}
-		</tbody>
-	    </table>
+	<div className="PageTitle">
+	    <h2>All Quotes</h2>
+	    <div className="App">
+		<table className="QuotesTable">
+		    <tbody>
+			<tr>
+			    <th>Quote</th>
+			    <th>Novel</th>
+			</tr>
+			{list && list.results.map(item => <tr key={item.text}>
+							      <td className="QuoteText">{item.text}</td>
+							      <td className="QuoteNovel">{item.novel}</td>
+							  </tr>
+						 )}
+		    </tbody>
+		</table>
+	    </div>
 	</div>
     );
 }
