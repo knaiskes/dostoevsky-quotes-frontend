@@ -2,11 +2,11 @@ import React from "react";
 
 export const Navbar = () => (
     <div className="navbar">
-	<a href="/">Home</a>
+	<a href="/">About</a>
 	<a href="/quotes/all">All</a>
 	<a href="/quotes/random">Random</a>
 	<div className="subnav">
-	    <button className="subnavbtn">By Novel <i className="fa fa-caret-down"></i></button>
+	    <button className="subnavbtn">By Novel</button>
 	    <div className="subnav-content">
 		<a href="/quotes/novel/Crime and Punishment">Crime and Punishment</a>
 		<a href="/quotes/novel/Humiliated and Insulted">Humiliated and Insulted</a>
