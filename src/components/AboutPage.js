@@ -13,8 +13,8 @@ export function AboutPage() {
 		Both the frontend and the backend (API) of this porject are Open Source
 		and available at:
 		<ul>
-		    <li><a target="_blank" href="https://github.com/KNaiskes/dostoevsky-quotes-api">dostoevsky-quotes-api</a></li>
-		    <li><a target="_blank" href="https://github.com/KNaiskes/dostoevsky-quotes-frontend">dostoevsky-quotes-frontend</a></li>
+		    <li><a target="_blank" rel="noreferrer" href="https://github.com/KNaiskes/dostoevsky-quotes-api">dostoevsky-quotes-api</a></li>
+		    <li><a target="_blank" rel="noreferrer" href="https://github.com/KNaiskes/dostoevsky-quotes-frontend">dostoevsky-quotes-frontend</a></li>
 		</ul>
 	    </p>
 	</div>
