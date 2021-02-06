@@ -1,6 +1,6 @@
 // Fetch quote(s) service
 
-const BASE_URL = '188.166.69.42/api/quotes/';
+const BASE_URL = 'http://188.166.69.42/api/quotes/';
 
 const headers = {"Content-Type": "application/json"};
 
